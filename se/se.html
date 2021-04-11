@@ -1,0 +1,215 @@
+<html>
+<head>
+	<title>SOFTWARE ENGINEERING</title>
+ <meta charset="utf-8">
+    		
+	<script src="../disable.js"></script>
+
+
+
+	<style type="text/css">
+
+#buttn{
+		text-align:center;
+	}
+#back{
+		position: fixed;
+		top: 0;
+	}
+	button{
+  position: relative;
+  height: 60px;
+  width: 200px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #111;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+button:before{
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  filter: blur(5px);
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  transition: opacity .3s ease-in-out;
+  animation: animate 20s linear infinite;
+}
+button:hover:before{
+  opacity: 1;
+}
+button:hover:active{
+  background: none;
+}
+button:hover:active:before{
+  filter: blur(2px);
+}
+@keyframes animate {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+
+
+	</style>
+
+</head>
+<body  onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
+
+<h1 style = "text-align: center;">SOFTWARE ENGINEERING-18CS411</h1>
+
+<h3>Unit-1 --> FUNDAMENTALS OF SOFTWARE ENGINEERING</h3>
+<ul>
+<li>
+The nature of Software </li>
+<li> Software Engineering </li>
+<li> Software Process </li>
+<li> Software Engineering Practice </li>
+<li>Generic Process
+Model</li>
+<li> Process Assessment and Improvement </li>
+<li> Prescriptive Process models </li>
+<li> Specialized Process Model </li>
+<li> Process
+Technology </li>
+<li> Product and Process </li>
+<li> Agile Development
+</li>
+
+
+</ul>
+
+<h3>Unit-2 --> REQUIREMENT ENGINEERING</h3>
+<ul>
+<li>
+Requirement Engineering </li>
+<li> Establishing Groundwork </li>
+<li> Eliciting Requirements </li>
+<li> Developing Use cases </li>
+<li> Building the
+Requirements Model </li>
+<li> Requirements Analysis </li>
+<li> Requirements Modeling Strategies </li>
+<li> Flow Oriented Modeling </li>
+<li>
+Creating a Behavioral Model.
+</li>
+
+
+</ul>
+
+<h3>Unit-3 --> DESIGN CONCEPTS AND ARCHITECTURAL DESIGN</h3>
+<ul>
+<li>
+Design within the context of Software Engineering </li>
+<li> Design Process </li>
+<li> Design Concepts </li>
+<li> Design Model </li>
+<li> Architectural
+Design: Software Architecture </li>
+<li> Architectural Genres </li>
+<li> Architectural Styles </li>
+<li>Architectural Design </li>
+<li> Architecture Mapping
+using Dataflow.
+</li>
+
+
+</ul>
+
+<h3>Unit-4 --> TESTING TECHNIQUES</h3>
+<ul>
+<li>
+A strategic Approach for Software Testing </li>
+<li> Test Strategies for Conventional Software </li>
+<li> Validation Testing </li>
+<li> System
+Testing </li>
+<li>Art of Debugging </li>
+<li> Testing Conventional Applications : Software testing Fundamentals </li>
+<li> Internal and External
+Views Testing </li>
+<li> White Box Testing </li>
+<li> Basis Path Testing </li>
+<li> Control Structure Testing </li>
+<li> Black Box Testing </li>
+<li> Model Based
+Testing </li>
+<li> Testing for Specialized Environments </li>
+<li> Architectures and Applications </li>
+<li> Patterns for Software Testing.
+</li>
+
+
+</ul>
+
+<h3>Unit-5 --> PROJECT AND QUALITY MANAGEMENT</h3>
+<ul>
+<li>
+Quality Concepts: Software Quality </li>
+<li> The Software Quality Dilemma </li>
+<li> Achieving Software Quality </li>
+<li> Formal Technical
+Review </li>
+<li> Software Quality Assurance </li>
+<li> Process and Project Metrics </li>
+<li> Emerging Trends in Software Engineering.
+</li>
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 id = "back"><a href="../index.html"><abbr title ="Back to Main Page" >&#8617;</abbr></a></h5>
+
+
+
+
+
+
+
+
+<div id = "buttn">
+
+
+<a href="../pdm/pdm.html" ><button>PDM</button></a>
+
+<a href="../jp/jp.html" ><button>JP</button></a>
+
+<a href="../os/os.html" ><button>OS</button></a>
+
+<a href="../daa/daa.html" ><button>DAA</button></a>
+
+<a href="../mp/mp.html" ><button>MP and MC</button></a>
+</div>
+</body>
+</html>

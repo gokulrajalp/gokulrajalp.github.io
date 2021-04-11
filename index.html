@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title>SEMESTER-4</title>
+
+ <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">	
+		
+	<script src="disable.js"></script>
+
+
+</head>
+<body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
+
+
+
+<div id="clock">00:00:00</div>
+
+<script type="text/javascript">
+	setInterval(displayclock, 500);
+
+	function displayclock ()	{
+		var time = new Date();
+		var hrs = time.getHours();
+		var min = time.getMinutes();
+		var sec = time.getSeconds();
+		var en = 'AM';
+
+		if (hrs > 12){
+			en = 'PM'
+		};
+
+		if (hrs > 12) {
+			hrs = hrs - 12;
+		};
+
+		if (hrs == 0) {
+			hrs = 12;
+		};
+
+		if (hrs < 10) {
+			hrs = '0' + hrs; 
+		};
+
+
+		if (min < 10) {
+			min = '0' + min;
+		};
+
+		if (sec < 10) {
+			sec = '0' + sec;
+		};
+
+		
+
+	document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec + ' ' + en;
+}
+
+</script>
+
+
+
+
+<div class="center">
+
+
+<div class="outer circle">
+        <a href="pdm/pdm.html" ><button>PDM</button></a>
+         </div>
+
+<div class="outer circle">
+        <a href="se/se.html" ><button>SE</button></a>
+         </div>
+
+<div class="outer circle">
+        <a href="jp/jp.html" ><button>JP</button></a>
+         </div>
+
+<div class="outer circle">
+        <a href="os/os.html" ><button>OS</button></a>
+         </div>
+
+<div class="outer circle">
+        <a href="daa/daa.html" ><button>DAA</button></a>
+         </div>
+
+<div class="outer circle">
+        <a href="mp/mp.html" ><button>MP and MC</button></a>
+         </div>
+
+</div>
+</body>
+</html>

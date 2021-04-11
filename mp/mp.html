@@ -1,0 +1,195 @@
+<html>
+<head>
+	<title>MICROPROCESSORS AND MICROCONTROLLERS</title>
+ <meta charset="utf-8">
+   
+		
+	<script src="../disable.js"></script>
+
+
+
+	<style type="text/css">
+
+	#back{
+		position: fixed;
+		top: 0;
+	}
+
+#buttn{
+		text-align:center;
+	}
+
+	button{
+  position: relative;
+  height: 60px;
+  width: 200px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #111;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+button:before{
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  filter: blur(5px);
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  transition: opacity .3s ease-in-out;
+  animation: animate 20s linear infinite;
+}
+button:hover:before{
+  opacity: 1;
+}
+button:hover:active{
+  background: none;
+}
+button:hover:active:before{
+  filter: blur(2px);
+}
+@keyframes animate {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+
+
+	</style>
+
+</head>
+<body  onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
+
+
+
+
+
+<h1 style = "text-align: center;">MICROPROCESSORS AND MICROCONTROLLERS-18EC436</h1>
+
+
+
+
+
+<h3>Unit-1 --> 8085 MICROPROCESSOR</h3>
+<ul>
+<li>
+Introduction </li>
+<li> Address, data and control bus </li>
+<li> 8085: Hardware architecture, pin diagram, addressing modes, instruction
+set, assembly language programming.
+</li>
+
+
+</ul>
+
+<h3>Unit-2 --> 8086 MICROPROCESSOR</h3>
+<ul>
+<li>
+8086: Hardware architecture, Pin diagram, Addressing modes, Instruction set, Interrupts and Interrupt service routines,
+Assembly language programming </li>
+<li> Assembler directives </li>
+<li> Procedures </li>
+<li> Macros </li>
+<li> BIOS DOS function calls.
+</li>
+
+
+</ul>
+
+<h3>Unit-3 --> MULTIPROCESSOR CONFIGURATIONS</h3>
+<ul>
+<li>
+Coprocessor configuration </li>
+<li> Closely coupled configuration </li>
+<li> Loosely coupled configuration </li>
+<li> Numeric data processor
+(8087) architecture and data types </li>
+<li> I/O processor architecture (8089).
+</li>
+
+
+</ul>
+
+<h3>Unit-4 --> PERIPHERAL INTERFACING</h3>
+<ul>
+<li>
+Memory and I/O interfacing </li>
+<li> Parallel communication interface (8255) </li>
+<li> Serial communication interface (8251) </li>
+<li>
+Programmable interval timer (8253) </li>
+<li> Keyboard / display controller (8279) </li>
+<li> Interrupt controller (8259) </li>
+<li> DMA controller
+(8237) </li>
+<li> ADC and DAC.
+</li>
+
+
+</ul>
+
+<h3>Unit-5 --> 8051 MICROCONTROLLER</h3>
+<ul>
+<li>
+8051: Hardware architecture, special function register, I/O ports, external memory, addressing modes, instruction set,
+timers and counters, serial data I/O, interrupts </li>
+<li> Interfacing: Keyboard, LCD, stepper motor.
+</li>
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id = "buttn">
+
+
+<a href="../pdm/pdm.html" ><button>PDM</button></a>
+
+<a href="../se/se.html" ><button>SE</button></a>
+
+
+<a href="../jp/jp.html" ><button>JP</button></a>
+
+<a href="../os/os.html" ><button>OS</button></a>
+
+<a href="../daa/daa.html" ><button>DAA</button></a>
+
+<h5 id = "back"><a href="../index.html"><abbr title ="Back to Main Page" >&#8617;</abbr></a></h5>
+</div>
+</body>
+</html>

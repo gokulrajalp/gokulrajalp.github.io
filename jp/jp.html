@@ -1,0 +1,243 @@
+<html>
+<head>
+	<title>JAVA PROGRAMMING</title>
+
+
+ <meta charset="utf-8">
+	<script src="../disable.js"></script>
+
+
+
+	<style type="text/css">
+
+#buttn{
+		text-align:center;
+	}
+#back{
+		position: fixed;
+		top: 0;
+	}
+	button{
+  position: relative;
+  height: 60px;
+  width: 200px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #111;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+button:before{
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  filter: blur(5px);
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  transition: opacity .3s ease-in-out;
+  animation: animate 20s linear infinite;
+}
+button:hover:before{
+  opacity: 1;
+}
+button:hover:active{
+  background: none;
+}
+button:hover:active:before{
+  filter: blur(2px);
+}
+@keyframes animate {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+
+
+	</style>
+
+</head>
+<body  onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
+
+
+
+
+
+
+<h1 style = "text-align: center;">JAVA PROGRAMMING-18CS002</h1>
+
+
+
+
+<h3>Unit-1 --> JAVA FUNDAMENTALS</h3>
+<ul>
+<li>
+The Java Buzzwords </li>
+<li> Data Types </li>
+<li> Variables </li>
+<li> Arrays </li>
+<li> Operators </li>
+<li> Control Statements </li>
+<li> Class Fundamentals </li>
+<li>
+Declaring Objects </li>
+<li> Methods </li>
+<li>Method Overloading </li>
+<li> Objects as Parameters </li>
+<li> Returning Objects </li>
+<li> Recursion </li>
+<li>this
+keyword </li>
+<li> Garbage Collection.
+</li>
+
+
+</ul>
+
+<h3>Unit-2 --> CONSTRUCTORS AND INHERITANCE</h3>
+<ul>
+<li>
+Constructors </li>
+<li> Constructor Overloading</li>
+<li>Access Control </li>
+<li> static </li>
+<li> final </li>
+<li> Nested and Inner Class </li>
+<li> Inheritance : Basics
+</li>
+<li>Super </li>
+<li> Multilevel </li>
+<li> Hierarchical </li>
+<li> Method Overriding </li>
+<li> Abstract class </li>
+<li>Final with Inheritance.
+</li>
+
+
+</ul>
+
+<h3>Unit-3 --> PACKAGES, INTERFACES AND EXCEPTION HANDLING</h3>
+<ul>
+<li>
+Packages </li>
+<li> Access Protection </li>
+<li> Importing Packages </li>
+<li> Interfaces </li>
+<li> Default Interface Methods </li>
+<li> Static Methods in
+Interface </li>
+<li> Exception Handling Fundamentals </li>
+<li> Types </li>
+<li> Uncaught Exceptions </li>
+<li>Try and Catch </li>
+<li> Multiple Catch </li>
+<li> Nested
+Try </li>
+<li> Throw </li>
+<li> Throws </li>
+<li> Finally </li>
+<li>Array List-Wrapper Classes.
+</li>
+
+
+</ul>
+
+<h3>Unit-4 --> MULTITHREADED PROGRAMMING AND I/O OPERATIONS</h3>
+<ul>
+<li>
+Java Thread Model </li>
+<li> Main Thread </li>
+<li> Creating a Thread </li>
+<li> Creating Multiple Threads </li>
+<li>isAlive and join Methods </li>
+<li> Thread
+Priorities - Synchronization </li>
+<li>Interthread Communication </li>
+<li> Suspending, Resuming, and Stopping Threads </li>
+<li> Obtaining a
+Thread’s State </li>
+<li> Using Multithreading </li>
+<li> I/O Basics </li>
+<li> Reading Console Input </li>
+<li> Writing Console Output </li>
+<li> The PrintWriter
+Class </li>
+<li> Reading and Writing Files </li>
+<li> Automatically Closing a File </li>
+<li> Scanner class.
+</li>
+
+
+</ul>
+
+<h3>Unit-5 --> STRING AND DATABASE CONNECTIVITY</h3>
+<ul>
+<li>
+The String Constructors </li>
+<li> String Length </li>
+<li> Character Extraction </li>
+<li> String Comparison </li>
+<li> Searching Strings </li>
+<li> Modifying a
+String </li>
+<li> Data Conversion usingvalueOf method </li>
+<li> Methods in StringBuffer </li>
+<li> JDBC Product Components </li>
+<li> JDBC API </li>
+<li>
+JDBC Driver Manager </li>
+<li> JDBC Test Suite </li>
+<li> JDBC-ODBC Bridge </li>
+<li> JDBC Architecture </li>
+<li> Establishing Connection </li>
+<li>
+Handling SQL Exceptions.
+</li>
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id = "buttn">
+
+
+<a href="../pdm/pdm.html" ><button>PDM</button></a>
+
+<a href="../se/se.html" ><button>SE</button></a>
+
+<a href="../os/os.html" ><button>OS</button></a>
+
+<a href="../daa/daa.html" ><button>DAA</button></a>
+
+<a href="../mp/mp.html" ><button>MP and MC</button></a>
+</div>
+
+<h5 id = "back"><a href="../index.html"><abbr title ="Back to Main Page" >&#8617;</abbr></a></h5>
+
+
+</body>
+</html>

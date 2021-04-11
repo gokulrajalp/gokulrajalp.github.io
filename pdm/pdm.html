@@ -1,0 +1,194 @@
+<html>
+<head>
+	<title>PROBABILITY AND DECISION MODELS</title>
+ <meta charset="utf-8">
+    
+		
+	<script src="../disable.js"></script>
+
+
+
+	<style type="text/css">
+
+#buttn{
+		text-align:center;
+	}
+#back{
+		position: fixed;
+		top: 0;
+	}
+	button{
+  position: relative;
+  height: 60px;
+  width: 200px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #111;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+button:before{
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  filter: blur(5px);
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  transition: opacity .3s ease-in-out;
+  animation: animate 20s linear infinite;
+}
+button:hover:before{
+  opacity: 1;
+}
+button:hover:active{
+  background: none;
+}
+button:hover:active:before{
+  filter: blur(2px);
+}
+@keyframes animate {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+
+
+	</style>
+
+</head>
+<body  onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
+
+
+
+
+<h1 style = "text-align: center;">PROBABILITY AND DECISION MODELS-18MA441</h1>
+
+
+
+
+<h3>Unit-1 --> ONE DIMENSIONAL RANDOM VARIABLE</h3>
+<ul>
+<li>
+Discrete and Continuous Random Variable </li>
+<li> Moments </li>
+<li> Moment Generating Functions and their Properties</li>
+<li> Standard
+Distributions: Binomial, Poisson, Exponential and Normal Distributions
+</li>
+
+
+</ul>
+
+
+<h3>Unit-2 --> TWO DIMENSIONAL RANDOM VARIABLES</h3>
+<ul>
+<li>
+Joint Distributions </li>
+<li> Marginal and Conditional Distributions </li>
+<li> Covariance </li>
+<li> Correlation and Regression analysis and their
+Properties.
+</li>
+
+
+</ul>
+
+
+
+<h3>Unit-3 --> RANDOM PROCESSES</h3>
+<ul>
+<li>
+Classification </li>
+<li> Stationary Process </li>
+<li> Markov Process </li>
+<li> Markov Chain </li>
+<li> Transition Probabilities </li>
+<li> Limiting Distributions </li>
+<li>
+Poisson Process and their Properties.
+</li>
+
+
+</ul>
+
+<h3>Unit-4 --> QUEUEING MODELS</h3>
+<ul>
+<li>
+Markovian Queues </li>
+<li> Little’s formula </li>
+<li> Single Server Models : (M/M/1):(∞/FIFO) and (M/M/1):(N/FIFO) </li>
+<li> Multi Server
+Models : (M/M/C):(∞/FIFO) and (M/M/C):(N/FIFO).
+</li>
+
+
+</ul>
+
+<h3>Unit-5 --> NETWORK MODELSMENT</h3>
+<ul>
+<li>
+Network Construction </li>
+<li> Critical Path Method (CPM) </li>
+<li> Computations of total, free and independent floats </li>
+<li>PERT
+Analysis</li>
+<li> Computation of expected time and standard deviation.
+</li>
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 id = "back"><a href="../index.html"><abbr title ="Back to Main Page" >&#8617;</abbr></a></h5>
+
+
+
+<div id = "buttn">
+
+
+<a href="../se/se.html" ><button>SE</button></a>
+
+<a href="../jp/jp.html" ><button>JP</button></a>
+
+<a href="../os/os.html" ><button>OS</button></a>
+
+<a href="../daa/daa.html" ><button>DAA</button></a>
+
+<a href="../mp/mp.html" ><button>MP and MC</button></a>
+</div>
+</body>
+</html>
