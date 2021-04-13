@@ -67,6 +67,17 @@ text-align:center;
 
 
 }
+
+
+h4 a
+{
+	color: #f5a505;
+	font-size: 1em;
+}
+h4 a:hover
+{
+	color: #28ed05;
+}
 div{
 display:flex;
 justify-content:center;
@@ -101,58 +112,50 @@ h1{
 
 	<div class="container">
     <pre>
-    	<h2><a href="http://ksrceresults.com/" target="_blank">Get Result Here</a> </h2>
-     <h1>SGPA calculator SEM 2</h1>
-C PROGRAMMING		:<select id="credit1">
+    	<h1>SGPA Calculator SEM 2</h1>
+ENGLISH - II 	(18EN251):	<select id="credit1">
 		<option>O</option>
 		<option>A+</option>
 		<option>A</option>
 		<option>B+</option>
 		<option>B</option>
 	</select><br>
-C PROGRAMMING LABORATORY:<select id="credit2">
+MATHS - II 	(18MA243):	<select id="credit2">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
 			<option>B+</option>
 			<option>B</option>
 		</select><br>
-TECHNICAL ENGLISH - II  :<select id="credit3">
+PHYSICS 	(18PH043):	<select id="credit3">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
 			<option>B+</option>
 			<option>B</option>
 		</select><br>
-MANUFACTURING PRACTICES :<select id="credit4">
+C 		(18CS211):	<select id="credit4">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
 			<option>B+</option>
 			<option>B</option>
 		</select><br>
-DISCRETE MATHEMATICS	:<select id="credit5">
+MP 		(18GE028):	<select id="credit5">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
 			<option>B+</option>
 			<option>B</option>
 		</select><br>
-ESE (EVS)               :<select id="credit6">
-			<option>O</option>
-			<option>A+</option>
-			<option>A</option>
-			<option>B+</option>
-			<option>B</option>
-		</select><br>
-PHYSICS LABORATORY      :<select id="credit7">
+PHYSICS LAB 	(18PH028):	<select id="credit6">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
 			<option>B+</option>
 			<option>B</option>
         </select><br>
-ENGINEERING PHYSICS     :<select id="credit8">
+C LAB 		(18CS221):	<select id="credit7">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -161,7 +164,7 @@ ENGINEERING PHYSICS     :<select id="credit8">
 		</select><br><br>
 <button class="btn btn-info" onclick="Credits()">Click here</button>
   <h3 id="Result" >Your SGPA is ... </h3>
-  <h3><a href="index.html">Home Page</a></h3></h4><h3><a href="sgpa sem1.html">SEM 1</a> 	<a href="cgpa.html">CGPA</a> 	<a href="sgpa sem3.html">SEM 3</a></h4>
+  <h3><a href="index.html">Home Page</a></h3><h4><a href="sgpa sem1.html">SEM 1</a> 	 <a href="cgpa.html">CGPA</a> 	 <a href="sgpa sem3.html">SEM 3</a></h4>
   </pre>
   </div>
 <script>
@@ -172,8 +175,7 @@ ENGINEERING PHYSICS     :<select id="credit8">
 	    d=(document.getElementById("credit4").value);
 	    e=(document.getElementById("credit5").value);
 	    f=(document.getElementById("credit6").value);
-	    g=(document.getElementById("credit7").value);
-        h=(document.getElementById("credit8").value);		
+	    g=(document.getElementById("credit7").value);		
 if(a=='O'){
 			a=10;
 		}
@@ -279,25 +281,8 @@ if(g=='O'){
 		else if(g=='B'){
 			g=6;
 }	
-if(h=='O'){
-			h=10;
-		}
-		else if(h=='A+'){
-			h=9;
-		}
-		else if(h=='A'){
-			h=8;
-		}
-		else if(h=='B+'){
-			h=7;
-		}
-		else if(h=='B'){
-			h=6;
-			}	/*'A+'=9;
-		'A'=8;
-		'B+'=7;
-		'B'=6;*/
-	    Total=(3*a)+(1*b)+(3*c)+(3*d)+(4*e)+(0*f)+(1*g)+(3*h);
+
+	    Total=(3*a)+(4*b)+(3*c)+(3*d)+(3*e)+(1*f)+(1*g);
 	    Result=Total/18
 	    n = Result.toFixed(2);
 	    document.getElementById("Result").innerHTML="Your SGPA is  "+n;
