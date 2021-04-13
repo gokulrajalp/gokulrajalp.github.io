@@ -219,5 +219,24 @@ button
 #back{
 		position: fixed;
 		top: 0;
-		left:0;
+    		right: 0;
+    		font-size: 2em;
 	}
+
+@media(max-width:600px){
+	.box h2
+{
+	font-size: 1.2em;
+	font-weight: 400;
+	
+
+}
+	.box h3
+{
+	
+	font-size: 2em;
+	font-weight: 600;
+	
+
+}
+}
