@@ -285,13 +285,13 @@ a span:nth-child(4)
 				 0 0 120px #00b3ff;
 
 }
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 700px){
 .box h2
 {
 	font-family:  'Nunito', sans-serif;
 	color: #fff;
-	font-size: 1em;
-	font-weight: 200;
+	font-size: 0.5em;
+	font-weight: 100;
 	letter-spacing: 0.1em;
 	text-shadow: 0 0 10px #00b3ff,
 				 0 0 20px #00b3ff,
