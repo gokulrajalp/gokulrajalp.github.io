@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>CGPA</title>
+	<link rel="stylesheet" type="text/css" href="cgpastyle.css">
+</head>
+<body>
+
+<div class="box">
+		<h2>CGPA Calculator</h2>
+
+	</div>
+
+
+
+
+	<div class="form_group">
+		 <input type="input" class="form_field" placeholder="SEM 1 SGPA" id='sgpa1'>
+		 <label for="SEM 1 SGPA" class="form_label">SEM 1 SGPA</label>
+
+
+	</div>
+
+	<div class="form_group">
+		 <input type="input" class="form_field" placeholder="SEM 2 SGPA" id='sgpa2'>
+		 <label for="SEM 2 SGPA" class="form_label">SEM 2 SGPA</label>
+
+
+	</div>
+
+
+		<div class="form_group">
+		 <input type="input" class="form_field" placeholder="SEM 3 SGPA" id='sgpa3'>
+		 <label for="SEM 3 SGPA" class="form_label">SEM 3 SGPA</label>
+
+
+	</div>
+
+	<button onclick="cgpa()">Get CGPA</button>
+
+	
+
+	<div class="box">
+		<h3 id="result"></h3>
+
+	</div>
+
+<script>
+
+	function cgpa()
+	{
+		var sgpa1 = (document.getElementById('sgpa1').value);
+		var sgpa2 = (document.getElementById('sgpa2').value);
+		var sgpa3 = (document.getElementById('sgpa3').value);
+
+
+		
+
+		var total= parseFloat(sgpa1) + parseFloat(sgpa2) + parseFloat(sgpa3);
+		var result= total/3;
+
+		document.getElementById("result").innerHTML="Your CGPA is  "+result;
+
+
+
+	}
+
+
+
+
+
+</script>
+
+</body>
+</html>
