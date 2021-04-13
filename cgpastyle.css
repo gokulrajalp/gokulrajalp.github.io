@@ -199,3 +199,7 @@ body{
 	color: #af47ff;
 	font-weight: 700;
 }
+#back{
+		position: fixed;
+		top: 0;
+	}
