@@ -121,12 +121,12 @@ a {
 }
 a:nth-child(1)
 {
-	filter: hue-rotate(240deg);
+	filter: hue-rotate(140deg);
 }
 
 a:nth-child(2)
 {
-	filter: hue-rotate(240deg);
+	filter: hue-rotate(140deg);
 }
 
 a:nth-child(3)
@@ -136,16 +136,24 @@ a:nth-child(3)
 
 a:nth-child(4)
 {
-	filter: hue-rotate(200deg);
+	filter: hue-rotate(140deg);
 }
 
 a:nth-child(5)
 {
-	filter: hue-rotate(200deg);
+	filter: hue-rotate(220deg);
 }
 a:nth-child(6)
 {
-	filter: hue-rotate(200deg);
+	filter: hue-rotate(220deg);
+}
+a:nth-child(7)
+{
+	filter: hue-rotate(220deg);
+}
+a:nth-child(8)
+{
+	filter: hue-rotate(300deg);
 }
 
 a:hover
