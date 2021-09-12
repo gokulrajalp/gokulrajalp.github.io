@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SEM 4 SGPA Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<script>
+ 
+function disableCtrlKeyCombination(e)
+{
+
+var forbiddenKeys = new Array('q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m');
+var key;
+var isCtrl;
+if(window.event)
+{
+key = window.event.keyCode;    
+if(window.event.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+else
+{
+key = e.which;   
+if(e.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+
+if(isCtrl)
+{
+for(i=0; i<forbiddenKeys.length; i++)
+{
+
+if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+{
+
+return false;
+}
+}
+}
+return true;
+}
+</script>
+
+
+<style>
+pre{
+box-shadow:1px 1px 5px  5px black;
+}
+
+.container{
+text-align:center;
+ border-radius: 5px;
+
+
+}
+
+h4 a
+{
+	color: #f5a505;
+	font-size: 1em;
+}
+h4 a:hover
+{
+	color: #28ed05;
+}
+div{
+display:flex;
+justify-content:center;
+align-items:center;
+
+
+padding-top:10px;
+
+
+}
+
+@media(max-width:600px){
+pre{
+width:100%;
+height:100%;
+
+}
+.container{
+		background:linear-gradient(120deg,blue,yellow);
+
+
+}
+input{
+	width:45px;
+}
+h1{
+	font-size:25px;
+}
+}</style>
+</head>
+<body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
+	<div class="container">
+    <pre>
+    	<h2><a href="http://ksrceresults.com/" target="_blank">Get Result Here</a> </h2>
+     <h1>SGPA Calculator SEM 4</h1>
+JP			(18CS002):<select id="credit1">
+		<option>O</option>
+		<option>A+</option>
+		<option>A</option>
+		<option>B+</option>
+		<option>B</option>
+		<option>RA-F</option>
+	</select><br>
+OS			(18CS003):<select id="credit2">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+MP AND MC LAB		(18EC425):<select id="credit3">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+MP AND MC		(18EC436):<select id="credit4">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+PDM			(18MA441):<select id="credit5">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+OS LAB			(18CS422):<select id="credit6">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+DAA			(18CS412):<select id="credit7">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+        </select><br>
+JP LAB			(18CS421):<select id="credit8">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+SE			(18CS411):<select id="credit9">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br><br>
+<abbr title = "CDS-II have 0 credit then there is no change in SGPA (Grade*0 = 0), so Ignored"><b style = "color:red;">Note: CDS-II (18HR432)-No Credit</b></abbr>
+<button class="btn btn-info" onclick="Credits()">Click here</button>
+  <h3 id="Result" >Your SGPA is ... </h3>
+  <h3><a href="index.html">Home Page</a></h3><h4><a href="sgpa sem1.html">SEM 1</a> 	 <a href="sgpa sem3.html">SEM 3</a> 	 <a href="sgpa sem2.html">SEM 2</a></h4>
+  </pre>
+  </div>
+<script>
+	function Credits(){
+	var a=(document.getElementById("credit1").value);
+	    b=(document.getElementById("credit2").value);
+	    c=(document.getElementById("credit3").value);
+	    d=(document.getElementById("credit4").value);
+	    e=(document.getElementById("credit5").value);
+	    f=(document.getElementById("credit6").value);
+	    g=(document.getElementById("credit7").value);
+        h=(document.getElementById("credit8").value);
+		i=(document.getElementById("credit9").value);
+		tot = 23;		
+if(a=='O'){
+			a=10;
+		}
+		else if(a=='A+'){
+			a=9;
+		}
+		else if(a=='A'){
+			a=8;
+		}
+		else if(a=='B+'){
+			a=7;
+		}
+		else if(a=='B'){
+			a=6;
+		}
+		else if(a=='RA-F'){
+			a=0;
+			tot = tot - 3;
+		}
+if(b=='O'){
+			b=10;
+		}
+		else if(b=='A+'){
+			b=9;
+		}
+		else if(b=='A'){
+			b=8;
+		}
+		else if(b=='B+'){
+			b=7;
+		}
+		else if(b=='B'){
+			b=6;
+		}
+		else if(b=='RA-F'){
+			b=0;
+			tot = tot - 3;
+		}
+if(c=='O'){
+			c=10;
+		}
+		else if(c=='A+'){
+			c=9;
+		}
+		else if(c=='A'){
+			c=8;
+		}
+		else if(c=='B+'){
+			c=7;
+		}
+		else if(c=='B'){
+			c=6;
+		}
+		else if(c=='RA-F'){
+			c=0;
+			tot = tot - 1;
+		}
+if(d=='O'){
+			d=10;
+		}
+		else if(d=='A+'){
+			d=9;
+		}
+		else if(d=='A'){
+			d=8;
+		}
+		else if(d=='B+'){
+			d=7;
+		}
+		else if(d=='B'){
+			d=6;
+		}
+		else if(d=='RA-F'){
+			d=0;
+			tot = tot - 3;
+		}
+if(e=='O'){
+			e=10;
+		}
+		else if(e=='A+'){
+			e=9;
+		}
+		else if(e=='A'){
+			e=8;
+		}
+		else if(e=='B+'){
+			e=7;
+		}
+		else if(e=='B'){
+			e=6;
+		}
+		else if(e=='RA-F'){
+			e=0;
+			tot = tot - 4;
+		}
+if(f=='O'){
+			f=10;
+		}
+		else if(f=='A+'){
+			f=9;
+		}
+		else if(f=='A'){
+			f=8;
+		}
+		else if(f=='B+'){
+			f=7;
+		}
+		else if(f=='B'){
+			f=6;
+		}
+		else if(f=='RA-F'){
+			f=0;
+			tot = tot - 1;
+		}
+if(g=='O'){
+			g=10;
+		}
+		else if(g=='A+'){
+			g=9;
+		}
+		else if(g=='A'){
+			g=8;
+		}
+		else if(g=='B+'){
+			g=7;
+		}
+		else if(g=='B'){
+			g=6;
+		}
+		else if(g=='RA-F'){
+			g=0;
+			tot = tot - 4;
+		}
+if(h=='O'){
+			h=10;
+		}
+		else if(h=='A+'){
+			h=9;
+		}
+		else if(h=='A'){
+			h=8;
+		}
+		else if(h=='B+'){
+			h=7;
+		}
+		else if(h=='B'){
+			h=6;
+		}
+		else if(h=='RA-F'){
+			h=0;
+			tot = tot - 1;
+		}
+if(i=='O'){
+			i=10;
+		}
+		else if(i=='A+'){
+			i=9;
+		}
+		else if(i=='A'){
+			i=8;
+		}
+		else if(i=='B+'){
+			i=7;
+		}
+		else if(i=='B'){
+			i=6;
+		}
+		else if(i=='RA-F'){
+			i=0;
+			tot = tot - 3;
+		}
+		
+	    Total=(3*a)+(3*b)+(1*c)+(3*d)+(4*e)+(1*f)+(4*g)+(1*h)+(3*i);
+	    Result=Total/tot;
+	    n = Result.toFixed(2);
+	    document.getElementById("Result").innerHTML="Your SGPA is  "+n;
+	}
+</script>
+
+<script type="text/javascript">
+	
+$(document).ready(function() {
+	$('html').bind('cut copy paste', function (e) {
+		e.preventDefault();
+	})
+	$("html").on("contextmenu", function(e) {
+		return false;
+	})
+})
+
+</script>
+
+</body>
+</html>	
+   
+	
+     
+		
+	
