@@ -188,7 +188,8 @@ EG Lab 		(18AU027):	<select id="credit8">
 	    e=(document.getElementById("credit5").value);
 	    f=(document.getElementById("credit6").value);
 	    g=(document.getElementById("credit7").value);
-        h=(document.getElementById("credit8").value);		
+        h=(document.getElementById("credit8").value);	
+		tot = 19;	
 if(a=='O'){
 			a=10;
 		}
@@ -206,6 +207,7 @@ if(a=='O'){
 		}
 		else if(a=='RA-F'){
 			a=0;
+			tot = tot - 3;
 		}
 if(b=='O'){
 			b=10;
@@ -224,6 +226,7 @@ if(b=='O'){
 		}
 		else if(b=='RA-F'){
 			b=0;
+			tot = tot - 4;
 		}
 if(c=='O'){
 			c=10;
@@ -242,6 +245,7 @@ if(c=='O'){
 		}
 		else if(c=='RA-F'){
 			c=0;
+			tot = tot - 3;
 		}
 if(d=='O'){
 			d=10;
@@ -260,6 +264,7 @@ if(d=='O'){
 		}
 		else if(d=='RA-F'){
 			d=0;
+			tot = tot - 3;
 		}
 if(e=='O'){
 			e=10;
@@ -278,6 +283,7 @@ if(e=='O'){
 		}
 		else if(e=='RA-F'){
 			e=0;
+			tot = tot - 3;
 		}
 if(f=='O'){
 			f=10;
@@ -296,6 +302,7 @@ if(f=='O'){
 		}
 		else if(f=='RA-F'){
 			f=0;
+			tot = tot - 1;
 		}
 if(g=='O'){
 			g=10;
@@ -314,6 +321,7 @@ if(g=='O'){
 		}
 		else if(g=='RA-F'){
 			g=0;
+			tot = tot - 1;
 		}	
 if(h=='O'){
 			h=10;
@@ -332,10 +340,11 @@ if(h=='O'){
 		}
 		else if(h=='RA-F'){
 			h=0;
+			tot = tot - 1;
 		}
 		
 	    Total=(3*a)+(4*b)+(3*c)+(3*d)+(3*e)+(1*f)+(1*g)+(1*h);
-	    Result=Total/19
+	    Result=Total/tot;
 	    n = Result.toFixed(2);
 	    document.getElementById("Result").innerHTML="Your SGPA is  "+n;
 	}
