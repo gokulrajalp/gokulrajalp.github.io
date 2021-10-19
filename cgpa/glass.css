@@ -1,32 +1,59 @@
 body{
     background: linear-gradient(to right,#c242f5,#f839b8);
+    font-weight: bold;
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 20%;
 }
 
-
+h1{
+    color: #100e79;
+}
 
 .head{
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 81, 0);
 }
 
 .one{
     position: relative;
     height: fit-content;
-    width: 350px;
+    width: 400px;
     display: inline-block;
     text-align: left;
+    line-height: 35px;
 }
 .one select{
+    width: 100px;
     display: inline-block;
     position: absolute;
     right: 0px;
+    padding: 8px 30px 8px 40px;
+    border-radius: 25px;
+    font: 200 13px Arial;
+    -webkit-appearance: none;
+    appearance: none;
+    color: blue;
+    border: 1px solid #c242f5;
+}
+
+.one select::-ms-expand{
+    display: none;
+}
+
+.one select:focus{
+    outline: none;
+    box-shadow: 0 0 10px -1px #42f5ec;
 }
 
 .first{
     margin: auto;
     text-align: center;
-    width: 400px;
+    width: 450px;
+    height: 480px;
     background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
     box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
     border-radius: 20px;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -38,8 +65,10 @@ body{
 .second{
     margin: auto;
     text-align: center;
-    width: 400px;
+    width: 450px;
+    height: 420px;
     background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
     box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
     border-radius: 20px;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -49,8 +78,10 @@ body{
 .third{
     margin: auto;
     text-align: center; 
-    width: 400px;
+    width: 450px;
+    height: 460px;
     background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
     box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
     border-radius: 20px;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -60,12 +91,33 @@ body{
 .fourth{
     margin: auto;
     text-align: center;
-    width: 400px;
+    width: 450px;
+    height: 490px;
     background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
     box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
     border-radius: 20px;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     border-right: 1px solid rgba(255, 255, 255, 0.3);
 
+}
+
+#cgpa0{
+    color: rgb(255, 81, 0);
+}
+
+
+#cgpa1{
+    color: rgb(255, 81, 0);
+}
+
+
+#cgpa2{
+    color: rgb(255, 81, 0);
+}
+
+
+#cgpa3{
+    color: rgb(255, 81, 0);
 }
