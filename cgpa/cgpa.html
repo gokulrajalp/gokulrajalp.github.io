@@ -7,7 +7,7 @@
 <script type="text/javascript" src="calculation.js"> </script>
 
 </head>
-<body>
+<body onload="cgpa()">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>		
 
@@ -28,7 +28,7 @@
 
 
 
-English – I (18EN151): <select id = "subject1">
+English – I <nav>(18EN151):</nav> <select onchange="cgpa()" id = "subject1">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -37,7 +37,7 @@ English – I (18EN151): <select id = "subject1">
 			<option>RA-F</option>
 		</select><br>
 
-Maths – I 	(18MA151):	<select id = "subject2">
+Maths – I 	<nav>(18MA151):</nav>	<select onchange="cgpa()" id = "subject2">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -45,7 +45,7 @@ Maths – I 	(18MA151):	<select id = "subject2">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-Chemistry 	(18CH051):	<select id = "subject3">
+Chemistry 	<nav>(18CH051):</nav>	<select onchange="cgpa()" id = "subject3">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -53,7 +53,7 @@ Chemistry 	(18CH051):	<select id = "subject3">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-BEEE 		(18EE041):	<select id = "subject4">
+BEEE 		<nav>(18EE041):</nav>	<select onchange="cgpa()" id = "subject4">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -61,7 +61,7 @@ BEEE 		(18EE041):	<select id = "subject4">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-PST 		(18CS111):	<select id = "subject5">
+PST 		<nav>(18CS111):</nav>	<select onchange="cgpa()" id = "subject5">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -69,7 +69,7 @@ PST 		(18CS111):	<select id = "subject5">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-Chemistry Lab 	(18CH028):	<select id = "subject6">
+Chemistry Lab 	<nav>(18CH028):</nav>	<select onchange="cgpa()" id = "subject6">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -77,7 +77,7 @@ Chemistry Lab 	(18CH028):	<select id = "subject6">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-PST Lab 	(18CS121):	<select id = "subject7">
+PST Lab 	<nav>(18CS121):</nav>	<select onchange="cgpa()" id = "subject7">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -85,7 +85,7 @@ PST Lab 	(18CS121):	<select id = "subject7">
 			<option>B</option>
 			<option>RA-F</option>
         </select><br>
-EG Lab 		(18AU027):	<select id = "subject8">
+EG Lab 		<nav>(18AU027):</nav>	<select onchange="cgpa()" id = "subject8">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -110,7 +110,7 @@ EG Lab 		(18AU027):	<select id = "subject8">
 
 <h1>Semester 2</h1>
 <div class="one">
-ENGLISH - II 	(18EN251):	<select id = "subject9">
+ENGLISH - II 	<nav>(18EN251):</nav>	<select onchange="cgpa()" id = "subject9">
 		<option>O</option>
 		<option>A+</option>
 		<option>A</option>
@@ -118,7 +118,7 @@ ENGLISH - II 	(18EN251):	<select id = "subject9">
 		<option>B</option>
 		<option>RA-F</option>
 	</select><br>
-MATHS - II 	(18MA243):	<select id = "subject10">
+MATHS - II 	<nav>(18MA243):</nav>	<select onchange="cgpa()" id = "subject10">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -126,7 +126,7 @@ MATHS - II 	(18MA243):	<select id = "subject10">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-PHYSICS 	(18PH043):	<select id = "subject11">
+PHYSICS 	<nav>(18PH043):</nav>	<select onchange="cgpa()" id = "subject11">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -134,7 +134,7 @@ PHYSICS 	(18PH043):	<select id = "subject11">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-C 		(18CS211):	<select id = "subject12">
+C 		<nav>(18CS211):</nav>	<select onchange="cgpa()" id = "subject12">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -142,7 +142,7 @@ C 		(18CS211):	<select id = "subject12">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-MP 		(18GE028):	<select id = "subject13">
+MP 		<nav>(18GE028):</nav>	<select onchange="cgpa()" id = "subject13">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -150,7 +150,7 @@ MP 		(18GE028):	<select id = "subject13">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-PHYSICS LAB 	(18PH028):	<select id = "subject14">
+PHYSICS Lab 	<nav>(18PH028):</nav>	<select onchange="cgpa()" id = "subject14">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -158,7 +158,7 @@ PHYSICS LAB 	(18PH028):	<select id = "subject14">
 			<option>B</option>
 			<option>RA-F</option>
         </select><br>
-C LAB 		(18CS221):	<select id = "subject15">
+C Lab 		<nav>(18CS221):</nav>	<select onchange="cgpa()" id = "subject15">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -198,7 +198,7 @@ C LAB 		(18CS221):	<select id = "subject15">
 <h1>Semester 3</h1>
 <div class="one">
 
-LDDC 			(18EC332):<select id = "subject16">
+LDDC 			<nav>(18EC332):</nav><select onchange="cgpa()" id = "subject16">
 		<option>O</option>
 		<option>A+</option>
 		<option>A</option>
@@ -206,7 +206,7 @@ LDDC 			(18EC332):<select id = "subject16">
 		<option>B</option>
 		<option>RA-F</option>
 	</select><br>
-NCT 			(18MA343):<select id = "subject17">
+NCT 			<nav>(18MA343):</nav><select onchange="cgpa()" id = "subject17">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -214,7 +214,7 @@ NCT 			(18MA343):<select id = "subject17">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-PYTHON LAB 		(18CS028):<select id = "subject18">
+PYTHON Lab 		<nav>(18CS028):</nav><select onchange="cgpa()" id = "subject18">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -222,7 +222,7 @@ PYTHON LAB 		(18CS028):<select id = "subject18">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-PYTHON 			(18CS043):<select id = "subject19">
+PYTHON 			<nav>(18CS043):</nav><select onchange="cgpa()" id = "subject19">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -230,7 +230,7 @@ PYTHON 			(18CS043):<select id = "subject19">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-DATA STRUCTURES		(18CS311):<select id = "subject20">
+DATA STRUCTURES		<nav>(18CS311):</nav><select onchange="cgpa()" id = "subject20">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -238,7 +238,7 @@ DATA STRUCTURES		(18CS311):<select id = "subject20">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-COA			(18CS312):<select id = "subject21">
+COA			<nav>(18CS312):</nav><select onchange="cgpa()" id = "subject21">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -246,7 +246,7 @@ COA			(18CS312):<select id = "subject21">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-DATA STRUCTURES LAB 	(18CS321):<select id = "subject22">
+DATA STRUCTURES Lab 	<nav>(18CS321):</nav><select onchange="cgpa()" id = "subject22">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -254,7 +254,7 @@ DATA STRUCTURES LAB 	(18CS321):<select id = "subject22">
 			<option>B</option>
 			<option>RA-F</option>
         </select><br>
-DIGITAL SYSTEMS LAB 	(18EC325):<select id = "subject23">
+DIGITAL SYSTEMS Lab 	<nav>(18EC325):</nav><select onchange="cgpa()" id = "subject23">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -294,7 +294,7 @@ DIGITAL SYSTEMS LAB 	(18EC325):<select id = "subject23">
 
 <h1>Semester 4</h1>
 <div class="one">
-JP			(18CS002):<select id = "subject24">
+JP			<nav>(18CS002):</nav><select onchange="cgpa()" id = "subject24">
 		<option>O</option>
 		<option>A+</option>
 		<option>A</option>
@@ -302,7 +302,7 @@ JP			(18CS002):<select id = "subject24">
 		<option>B</option>
 		<option>RA-F</option>
 	</select><br>
-OS			(18CS003):<select id = "subject25">
+OS			<nav>(18CS003):</nav><select onchange="cgpa()" id = "subject25">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -310,7 +310,7 @@ OS			(18CS003):<select id = "subject25">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-MP AND MC LAB		(18EC425):<select id = "subject26">
+MP AND MC Lab		<nav>(18EC425):</nav><select onchange="cgpa()" id = "subject26">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -318,7 +318,7 @@ MP AND MC LAB		(18EC425):<select id = "subject26">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-MP AND MC		(18EC436):<select id = "subject27">
+MP AND MC		<nav>(18EC436):</nav><select onchange="cgpa()" id = "subject27">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -326,7 +326,7 @@ MP AND MC		(18EC436):<select id = "subject27">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-PDM			(18MA441):<select id = "subject28">
+PDM			<nav>(18MA441):</nav><select onchange="cgpa()" id = "subject28">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -334,7 +334,7 @@ PDM			(18MA441):<select id = "subject28">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-OS LAB			(18CS422):<select id = "subject29">
+OS Lab			<nav>(18CS422):</nav><select onchange="cgpa()" id = "subject29">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -342,7 +342,7 @@ OS LAB			(18CS422):<select id = "subject29">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-DAA			(18CS412):<select id = "subject30">
+DAA			<nav>(18CS412):</nav><select onchange="cgpa()" id = "subject30">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -350,7 +350,7 @@ DAA			(18CS412):<select id = "subject30">
 			<option>B</option>
 			<option>RA-F</option>
         </select><br>
-JP LAB			(18CS421):<select id = "subject31">
+JP Lab			<nav>(18CS421):</nav><select onchange="cgpa()" id = "subject31">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -358,7 +358,7 @@ JP LAB			(18CS421):<select id = "subject31">
 			<option>B</option>
 			<option>RA-F</option>
 		</select><br>
-SE			(18CS411):<select id = "subject32">
+SE			<nav>(18CS411):</nav><select onchange="cgpa()" id = "subject32">
 			<option>O</option>
 			<option>A+</option>
 			<option>A</option>
@@ -375,6 +375,333 @@ SE			(18CS411):<select id = "subject32">
 
 <h2 id = "cgpa3">CGPA : </h2>
 </div>
+
+
+
+
+
+<div class="fiveth">
+
+
+<h1>Semester 5</h1>
+<div class="one">
+TOC			<nav>(18CS511):</nav><select onchange="cgpa()" id = "subject33">
+		<option>O</option>
+		<option>A+</option>
+		<option>A</option>
+		<option>B+</option>
+		<option>B</option>
+		<option>RA-F</option>
+	</select><br>
+DBMS			<nav>(18CS512):</nav><select onchange="cgpa()" id = "subject34">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+WP		<nav>(18CS513):</nav><select onchange="cgpa()" id = "subject35">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+CN		<nav>(18CS514):</nav><select onchange="cgpa()" id = "subject36">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+ED		<nav>(18HS003):</nav><select onchange="cgpa()" id = "subject37">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+Elective-I			<select onchange="cgpa()" id = "subject38">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+DBMS Lab			<nav>(18CS521):</nav><select onchange="cgpa()" id = "subject39">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+        </select><br>
+Web & Open Source Lab			<nav>(18CS522):</nav><select onchange="cgpa()" id = "subject40">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+CN Lab			<nav>(18CS523):</nav><select onchange="cgpa()" id = "subject41">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+
+</div>
+
+
+
+<h2 id = "Result5">SGPA : </h2>
+
+<h2 id = "cgpa4">CGPA : </h2>
+</div>
+
+
+
+
+
+
+<div class="sixth">
+
+
+<h1>Semester 6</h1>
+<div class="one">
+PCD			<nav>(18CS611):</nav><select onchange="cgpa()" id = "subject42">
+		<option>O</option>
+		<option>A+</option>
+		<option>A</option>
+		<option>B+</option>
+		<option>B</option>
+		<option>RA-F</option>
+	</select><br>
+MC			<nav>(18CS612):</nav><select onchange="cgpa()" id = "subject43">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+ST		<nav>(18CS613):</nav><select onchange="cgpa()" id = "subject44">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+Elective - II		<select onchange="cgpa()" id = "subject45">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+Elective - III 			<select onchange="cgpa()" id = "subject46">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+Open Elective - I		<select onchange="cgpa()" id = "subject47">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+CT LAB			<nav>(18CS621):</nav><select onchange="cgpa()" id = "subject48">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+        </select><br>
+ST Lab			<nav>(18CS622):</nav><select onchange="cgpa()" id = "subject49">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+Mini Project			<nav>(18CS623):</nav><select onchange="cgpa()" id = "subject50">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+
+</div>
+
+
+
+<h2 id = "Result6">SGPA : </h2>
+
+<h2 id = "cgpa6">CGPA : </h2>
+</div>
+
+
+
+
+
+
+<div class="seventh">
+
+
+<h1>Semester 7</h1>
+<div class="one">
+PE		<nav>(18HS051):</nav><select onchange="cgpa()" id = "subject51">
+		<option>O</option>
+		<option>A+</option>
+		<option>A</option>
+		<option>B+</option>
+		<option>B</option>
+		<option>RA-F</option>
+	</select><br>
+BD and CC			<nav>(18CS711):</nav><select onchange="cgpa()" id = "subject52">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+CNS		<nav>(18CS712):</nav><select onchange="cgpa()" id = "subject53">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+GM		<nav>(18CS713):</nav><select onchange="cgpa()" id = "subject54">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+Elective - IV			<select onchange="cgpa()" id = "subject55">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+Open Elective - II			<select onchange="cgpa()" id = "subject56">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+BD and CC Lab			<nav>(18CS412):</nav><select onchange="cgpa()" id = "subject57">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+        </select><br>
+GM Lab			<nav>(18CS421):</nav><select onchange="cgpa()" id = "subject58">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+
+</div>
+
+
+
+<h2 id = "Result7">SGPA : </h2>
+
+<h2 id = "cgpa7">CGPA : </h2>
+</div>
+
+
+
+
+
+
+<div class="eighth">
+
+
+<h1>Semester 8</h1>
+<div class="one">
+Elective – V	<select onchange="cgpa()" id = "subject59">
+		<option>O</option>
+		<option>A+</option>
+		<option>A</option>
+		<option>B+</option>
+		<option>B</option>
+		<option>RA-F</option>
+	</select><br>
+Elective – VI	<select onchange="cgpa()" id = "subject60">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+Open Elective - III<select onchange="cgpa()" id = "subject61">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+Project Work		<nav>(18CS821):</nav><select onchange="cgpa()" id = "subject62">
+			<option>O</option>
+			<option>A+</option>
+			<option>A</option>
+			<option>B+</option>
+			<option>B</option>
+			<option>RA-F</option>
+		</select><br>
+
+</div>
+
+
+
+<h2 id = "Result8">SGPA : </h2>
+
+<h2 id = "cgpa8">CGPA : </h2>
+</div>
+
+
+
+
+
+
+
+
 <h5 id = "back"><a href="../index.html"><abbr title ="Back to Projects" >&#8617;</abbr></a></h5>
 
 </body>
