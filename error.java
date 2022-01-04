@@ -93,4 +93,4 @@ class error {
 		System.out.println("Data was received without any error.");
 
 	}
-}
+} // 7->1001101,4->1011,1001101101
