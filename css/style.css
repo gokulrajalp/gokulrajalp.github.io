@@ -131,3 +131,9 @@ to{padding-right: 120px;}
     font-size: 8px;
   }
 }
+
+@media (max-width: 547px){
+  #scroll{
+    font-size: 1rem;
+  }
+}
