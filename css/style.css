@@ -1,6 +1,19 @@
 #main-header img{
     height: 100%;
     width: 100%;
+} 
+
+#scroll{
+  color: rgb(45, 241, 255);
+  text-shadow: 1px 1px 1px rgb(45, 241, 255);
+  animation: sp 5s linear infinite;
+  text-decoration: none;
+    animation-direction: alternate;
+}
+
+@keyframes sp{
+from{padding-left: 120px;}
+to{padding-right: 120px;}
 }
 
 .bg-black{
