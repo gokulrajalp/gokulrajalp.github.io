@@ -1,0 +1,120 @@
+#main-header img{
+    height: 100%;
+    width: 100%;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.port-item{
+    width: 100%;
+}
+
+.port-item:hover{
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+
+
+.school{
+    width: 100%;
+}
+
+.cgpa{
+  font-size:  medium;
+}
+
+.heading img{
+  height: 100%;
+  width: 100%;
+}
+
+.contacts a{
+  padding-right: 10px;
+}
+
+
+.page{
+  color: black;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 40%;
+  width: 3%;
+  position: fixed;
+  top: 50%;
+  bottom: 50%;
+}
+.right{
+  right: 0px;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.left{
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  left: 0px;
+}
+
+@media (max-width: 991px) {
+  .port-item{
+    font-size: x-small;
+  }
+  .link{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .degree {
+   font-size: 1rem;
+  }
+  
+}
+@media (min-width: 992px) {
+  .heading h1{
+    font-size: 2.5rem;
+  }
+  .heading sub{
+    font-size: 1.8rem;
+  }
+  .heading h5{
+    font-size: 2.8rem;
+  }
+  
+}
+
+@media(min-width: 1199px){
+    .port-item{
+        padding-top: 4.5rem !important;
+        padding-bottom: 4.5rem !important;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+  .degree {
+   font-size: 1.8rem;
+  }
+}
+@media (max-width: 1400px) {
+  .degree {
+   font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebtn {
+   display: none;
+  }
+}
+
+@media (max-width: 412px){
+  .social{
+    font-size: 10px;
+  }
+}
