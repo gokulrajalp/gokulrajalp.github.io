@@ -2,7 +2,7 @@ function validate(){
 
 var a = document.forms["contact"]["name"].value;
 if(a === ""){
-    alert("Name filed is empty!");
+    alert("Name field is empty!");
     
     $(function(){
         $('#name').attr('placeholder',"Enter your Name or Type anything (Eg:NA)")
@@ -12,7 +12,7 @@ if(a === ""){
 
 var a = document.forms["contact"]["email"].value;
 if(a === ""){
-    alert("Email filed is empty!");
+    alert("Email field is empty!");
 
     $(function(){
         $('#email').attr('placeholder',"Enter your EmailID or Type anything (Eg:abc@gmail.com)")
@@ -23,7 +23,7 @@ if(a === ""){
 
 var a = document.forms["contact"]["message"].value;
 if(a === ""){
-    alert("Message filed is empty!");
+    alert("Message field is empty!");
     
     $(function(){
         $('#message').attr('placeholder',"This field must not empty, type your Message")
