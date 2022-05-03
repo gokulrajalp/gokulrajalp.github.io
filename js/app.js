@@ -1,3 +1,11 @@
+function goToGithub(){
+    window.open("https://github.com/gokulrajalp");
+}
+
+
+
+
+
 function validate(){
 
 var a = document.forms["contact"]["name"].value;

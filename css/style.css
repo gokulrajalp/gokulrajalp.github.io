@@ -11,6 +11,10 @@
     animation-direction: alternate;
 }
 
+
+#pointer{
+  cursor: pointer;
+}
 @keyframes sp{
 from{padding-left: 120px;}
 to{padding-right: 120px;}
