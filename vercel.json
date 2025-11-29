@@ -1,4 +1,6 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/gokulraja-portfolio/browser",
   "rewrites": [
     {
       "source": "/(.*)",
@@ -6,4 +8,3 @@
     }
   ]
 }
-
