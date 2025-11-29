@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/gokulraja-portfolio",
+  "devCommand": "npm start",
+  "installCommand": "npm install",
+  "framework": "angular",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+
